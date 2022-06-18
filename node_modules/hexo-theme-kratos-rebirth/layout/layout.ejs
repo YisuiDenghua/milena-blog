@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+    <%- partial('_partial/head') %>
+    <body class="custom-background">
+        <%- partial('_partial/header') %>
+
+        <% if (page.type !== "404") { %>
+
+            <section class="col-md-<%- (theme.sidebar === 'left' || theme.sidebar === 'right') ? '8' : '12' %>">
+
+        <% } %>
+
+            <%- body %>
+
+        <% if (page.type !== "404") { %>
+
+            </section>
+
+        <% } %>
+
+        <%- partial('_partial/footer') %>
+        <%- partial('_partial/after-footer') %>
+    </body>
+</html>

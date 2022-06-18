@@ -1,0 +1,38 @@
+categories_list: 分类目录
+read_more: 继续阅读
+read_full: 阅读全文
+search: 搜索
+search_notice: 有什么想找找看的呢o(*￣▽￣*)ブ
+search_submit: 找一找~
+search_notice_page: 这里是 %s 的搜索引擎~
+search_notice_keys: 搜索多个关键词时请用空格分割，例如「%s」这样；
+search_notice_tags: 您也可以使用这些标签碰碰运气哦~
+tag: 标签
+tagcloud: 标签聚合
+prev: 上一页
+next: 下一页
+comment: 留言
+archive: 文章归档
+archive_count: 当前共有 %d 篇文章 (゜-゜)つロ 干杯~
+page: 第 %d 页
+recent_posts: 最新文章
+newer: 上一篇
+older: 下一篇
+share: 分享
+rss_feed: RSS 订阅
+category: 分类
+category_in: 分类于
+copyright: 版权所有
+author: 作者
+read_count: '%s 次阅读'
+comments_count: '%s 条评论'
+last_modify: 最后编辑：
+last_modify_alert: 本文最后编辑于 %s 前，其中的内容可能需要更新。
+reward: 打赏
+no_title: 无标题
+use_cc4_license: 本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可
+toc: 文章目录
+words: 字
+post: 文章
+tags_count: 当前共有 %d 个标签 (゜-゜)つロ 干杯~
+categories_count: 当前共有 %d 种分类 (゜-゜)つロ 干杯~

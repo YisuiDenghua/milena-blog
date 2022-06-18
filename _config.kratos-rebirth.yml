@@ -1,0 +1,76 @@
+site_logo: https://ga.candinya.com/avatar/a7f9e15fef26e0a540edc977e21cb3eb
+#avatarUri: https://ga.candinya.com/avatar/a7f9e15fef26e0a540edc977e21cb3eb
+avatarUri: https://avatars.githubusercontent.com/u/102890144
+
+menu:
+  index: /
+  archives: /archives/
+  friends: /friends/
+  sites:
+    submenu: true
+    ob: https://openbsd-zh-association.github.io/docs-openbsd-zh/
+    lanta: lanta.cyou
+    chitang: chitang.tech
+    
+    #author: https://candinya.com
+    #project: https://github.com/Candinya/Kratos-Rebirth
+
+label:
+  index: <i class="fa fa-home"></i>首页
+  archives: <i class="fa fa-file"></i>档案馆
+  friends: <i class="fa fa-paw"></i>好伙伴
+  sites:
+    chitang: 池塘的博客
+    lanta: "Lanta's zone"
+    ob: OpenBSD中文结社
+    
+    submenu: <i class="fa fa-link"></i>友站
+    author: 作者博客
+    project: 项目链接
+
+friends:
+  list:
+  - name: "Aleksana"
+    avatar: "https://portrait.gitee.com/uploads/avatars/user/2180/6541054_aleksana_1649149715.png!avatar200"
+  - name: "Dram"
+    avatar: "https://avatars.githubusercontent.com/u/2818072"
+    #link: "https://candinya.com"  
+  - name: "Hykilpikonna"
+    avatar: "https://avatars.githubusercontent.com/u/22280294"
+  - name: "纱月酱"
+    bio: ""
+    avatar: "https://avatars.githubusercontent.com/u/55868015"
+    #link: "https://candinya.com"
+  - name: "Lanta"
+    bio: ""
+    avatar: "https://avatars.githubusercontent.com/u/95084339"
+    #link: "https://candinya.com"
+  - name: "池塘"
+    bio: ""
+    avatar: "https://avatars.githubusercontent.com/u/59324836"
+  - name: "Yinfeng"
+    avatar: "https://avatars.githubusercontent.com/u/11229748"
+  - name : "一刀斩"
+    avatar : "https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640"
+  - name: "Billchen"
+    avatar: "https://avatars.githubusercontent.com/u/7758042"
+  - name: "Tsingkwai"
+    avatar: "https://avatars.githubusercontent.com/u/38799701"
+  - name : "William"
+    avatar: "https://avatars.githubusercontent.com/u/61577379?s=100&v=4"
+contact:
+  github: YisuiDenghua
+  telegram: openbsd_zh
+  bilibili: 475345659
+posts:
+  comments:
+    provider: gitalk
+
+gitalk:
+  clientID: 'GitHub Application Client ID'
+  clientSecret: 'GitHub Application Client Secret'
+  # repo: 'Kratos-Rebirth-Demo'
+  # owner: 'Candinya'
+  # admin:
+  #   - 'Candinya'
+  # distractionFreeMode: false

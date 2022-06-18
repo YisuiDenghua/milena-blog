@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: MILENA'S BLOG
-subtitle: '一穗灯花的博客'
-description: '我们是宇宙的尘埃，佩戴着璀璨的星辰。'
+title: 灯花小屋～
+subtitle: "我们是宇宙的尘埃，佩戴着璀璨的星辰。"
+description: '一穗灯花'
 keywords:
 author: Milena
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://yisui.vercel.app
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: liveforcode
+theme: kratos-rebirth
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
