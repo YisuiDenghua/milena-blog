@@ -6,23 +6,23 @@ menu:
   index: /
   archives: /archives/
   friends: /friends/
+  about: /about/
   sites:
     submenu: true
     ob: https://openbsd-zh-association.github.io/docs-openbsd-zh/
-    lanta: lanta.cyou
-    chitang: chitang.tech
-    
-    #author: https://candinya.com
-    #project: https://github.com/Candinya/Kratos-Rebirth
+    nix: https://github.com/nixos-cn
+    ruzh: https://ruzhtw.top/
 
 label:
   index: <i class="fa fa-home"></i>首页
   archives: <i class="fa fa-file"></i>档案馆
   friends: <i class="fa fa-paw"></i>好伙伴
-  sites:
-    chitang: 池塘的博客
-    lanta: "Lanta's zone"
-    ob: OpenBSD中文结社
+  about: <i class="fa fa-heart"></i>关于我
+  sites: 
+    ob: OpenBSD中文站
+    nix: NixOS中文
+    ruzh: 茶楼实验室
+    
     
     submenu: <i class="fa fa-link"></i>友站
     author: 作者博客
@@ -38,15 +38,18 @@ friends:
   - name: "Hykilpikonna"
     avatar: "https://avatars.githubusercontent.com/u/22280294"
   - name: "纱月酱"
+    link: "https://sbchild.top"
     bio: ""
     avatar: "https://avatars.githubusercontent.com/u/55868015"
     #link: "https://candinya.com"
   - name: "Lanta"
     bio: ""
+    link: "lanta.cyou"
     avatar: "https://avatars.githubusercontent.com/u/95084339"
     #link: "https://candinya.com"
   - name: "池塘"
     bio: ""
+    link: "chitang.tech"
     avatar: "https://avatars.githubusercontent.com/u/59324836"
   - name: "Yinfeng"
     avatar: "https://avatars.githubusercontent.com/u/11229748"
@@ -59,8 +62,13 @@ friends:
   - name : "William"
     avatar: "https://avatars.githubusercontent.com/u/61577379?s=100&v=4"
   - name : "BearChild"
+    bio : "背地里连只猫都没有"
     link : "https://imbearchild.cyou/"
     avatar: "https://imbearchild.cyou/wp-content/uploads/2021/11/paper-cut.webp"
+  - name: "Anillc"
+    bio: "ani://c"
+    avatar: https://ani.llc/bg.84e5f449.png
+    link: "https://ani.llc/"
 contact:
   github: YisuiDenghua
   telegram: openbsd_zh
