@@ -9,7 +9,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "5.4.2"
+    "version": "6.2.0"
   },
   "dependencies": {
     "hexo": "^6.2.0",
@@ -21,7 +21,6 @@
     "hexo-renderer-marked": "^5.0.0",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-kratos-rebirth": "^2.0.3",
-    "hexo-theme-landscape": "^0.0.3"
+    "hexo-theme-kratos-rebirth": "^2.0.3"
   }
 }
