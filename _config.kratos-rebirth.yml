@@ -243,4 +243,4 @@ friends:
     avatar: "https://fangluo.top/static/avatar.png"
     link: "https://fangluo.top/"
     bio: "是可爱的坊洛酱~"
-  verify: true # 验证每个友链的可访问性，炸了会有提示
+  verify: false # 验证每个友链的可访问性，炸了会有提示
