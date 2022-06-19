@@ -8,10 +8,12 @@ menu:
   friends: /friends/
   about: /about/
   sites:
+  
     submenu: true
     ob: https://openbsd-zh-association.github.io/docs-openbsd-zh/
     nix: https://github.com/nixos-cn
     ruzh: https://ruzhtw.top/
+    fedora: https://fedora.fun/
 
 label:
   index: <i class="fa fa-home"></i>首页
@@ -19,10 +21,10 @@ label:
   friends: <i class="fa fa-paw"></i>好伙伴
   about: <i class="fa fa-heart"></i>关于我
   sites: 
-    ob: OpenBSD中文站
+    ob: OpenBSD中文
     nix: NixOS中文
     ruzh: 茶楼实验室
-    
+    fedora: "Fedora Fün"
     
     submenu: <i class="fa fa-link"></i>友站
     author: 作者博客
@@ -30,6 +32,8 @@ label:
 
 friends:
   list:
+  - name: "小泠酱"
+    avatar: "/images/rin.jpg"
   - name: "Aleksana"
     avatar: "https://portrait.gitee.com/uploads/avatars/user/2180/6541054_aleksana_1649149715.png!avatar200"
   - name: "Dram"
@@ -52,7 +56,7 @@ friends:
     link: "https://chitang.tech"
     avatar: "https://avatars.githubusercontent.com/u/59324836"
   - name: "Yinfeng"
-    link: "htps://blog.linyinfeng.com"
+    link: "https://blog.linyinfeng.com"
     avatar: "https://avatars.githubusercontent.com/u/11229748"
   - name : "一刀斩"
     avatar : "https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640"
