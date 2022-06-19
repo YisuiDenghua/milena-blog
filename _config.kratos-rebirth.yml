@@ -60,8 +60,8 @@ friends:
     avatar: "https://avatars.githubusercontent.com/u/61577379?s=100&v=4"
 contact:
   github: YisuiDenghua
-  telegram: openbsd_zh
-  bilibili: 475345659
+  telegram: yisui_fanza
+  
 posts:
   comments:
     provider: gitalk
