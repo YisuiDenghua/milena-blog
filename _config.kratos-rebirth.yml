@@ -71,6 +71,10 @@ friends:
     bio: "ani://c"
     avatar: https://ani.llc/bg.84e5f449.png
     link: "https://ani.llc/"
+  - name: "雪泽坊洛"
+    avatar: "https://fangluo.top/static/avatar.png"
+    link: "https://fangluo.top/"
+    bio: "是可爱的坊洛酱~"
 contact:
   github: YisuiDenghua
   telegram: openbsd_zh
