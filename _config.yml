@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://yisui.vercel.app
+url: http://milena-blog.vercel.app
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -29,6 +29,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+    - "static/*"
+    - "images/*"
+    - "favicon.ico"
 
 # Writing
 new_post_name: :title.md # File name of new posts
