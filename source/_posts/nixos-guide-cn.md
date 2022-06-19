@@ -1,6 +1,8 @@
 ---
 title: 一个配置文件就能在各个电脑装一模一样的系统和软件？——保姆级教你轻松掌握NixOS
-categories: NixOS
+categories: 
+  - NixOS
+  - 教程
 #pic: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/NixOS_logo.svg/1280px-NixOS_logo.svg.png
 author: 
  - Lanta
@@ -12,8 +14,6 @@ tags:
  - NixOS
  - Linux
  - 保姆级教程
-categories: 教程
-
 ---
 
 <h1 align="center">
