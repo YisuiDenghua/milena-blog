@@ -251,9 +251,6 @@ friends:
     bio: "维尔希妮娅"
     link: "https://91khr.github.io"
     avatar: "https://rp.ydz1.gq/https://avatars.githubusercontent.com/u/24869594?v=4"
-  - name: "Lneylan"
-    bio: "https://rp.ydz1.gq/https://avatars.githubusercontent.com/u/92664048?v=4"
-    link: "https://lneylan.com"
   verify: false # 验证每个友链的可访问性，炸了会有提示
   
 
