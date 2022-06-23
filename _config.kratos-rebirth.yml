@@ -33,6 +33,7 @@ menu:
     nix: https://github.com/nixos-cn
     ruzh: https://ruzhtw.top/
     fedora: https://fedora.fun/
+    mtf: https://mtf.saeziae.net
 
 label:
   index: <i class="fa fa-home"></i>首页
@@ -44,7 +45,7 @@ label:
     nix: NixOS-CN
     ruzh: 茶楼实验室
     fedora: "Fedora Fün"
-
+    mtf: "MtF Wiki"
     submenu: <i class="fa fa-link"></i>友站
     author: 作者博客
     project: 项目链接
