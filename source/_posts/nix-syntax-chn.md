@@ -88,3 +88,30 @@ The option value 'services.httpd.enable' in '/etc/nixos/configuration.nix' is no
 >  `  '/etc/nixos/configuration.nix' 中的选项 services.httpd.enable 的值不是一个布尔值。`
 
 在完成更改之后，使用 `nixos-rebuild switch` 应用之。
+
+# 附加项目：`nixos-rebuild` 命令的使用
+
+`nixos-rebuild` 是一个 NixOS 命令，用于应用用户在系统配置文件中做出的更改。亦可用于一系列有关管理 NixOS 系统状态的其他事务。
+
+当你对 NixOS 系统做出更改之后，你需要使用 `nixos-rebuild` 将它们应用。此时，NixOS 会根据配置文件进行重构。然而 `nixos-rebuild` 的运行需要子命令。不同的子命令可指定其完成不同任务。
+
+## `nixos-rebuild` 的子命令
+
+`nixos-build switch` 会重构你的系统，同时立刻应用新配置，并将它用作你的默认启动项。
+
+`nixos-rebuild boot` 会重构你的系统，并将新配置作为默认启动项。但它不会立刻应用新配置。若要应用新配置，你需要重启系统，并进入最新生成的启动项。
+
+`nixos-rebuild test` 会重构你的系统，同时立刻应用新配置，但它不会将新配置加入到启动菜单。
+
+`nixos-rebuild build` 会从配置文件构建系统，同时在当前目录生成一个名为 `result` 的符号链接，指向 Nix Store 中的*衍生物*（derivation）。
+
+`nixos-rebuild dry-activate` 会从配置文件构建系统，但不会应用之。相反，它会展示在应用新配置时的显著变化。
+
+`nixos-rebuild build-vm` 会从配置文件构建 NixOS,并在 QEMU 虚拟机里运行。它会在当前目录留下一个名为 `result` 的符号链接，包含所构建的虚拟机。使用 `result/bin/run-<主机名>-vm` 以运行该虚拟机。
+
+
+> 提示：你也可以使用 `--target-host` 参数来通过 SSH 远程重构其他设备上的系统，例如
+>
+> `nixos-rebuild --target-host user@example.org switch` 相当于在 `example.org` 上以 `user` 用户登录并执行了 `nixos-rebuild switch` 。
+>
+> 此命令会在你的设备上执行 NixOS 重构过程，并将其应用于目标远程设备。由于 NixOS 重构过程需消耗一定硬件资源，当目标设备硬件配置较低时，此方法尤为适用。
