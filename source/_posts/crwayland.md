@@ -18,6 +18,7 @@ tags:
   <br>NixOS<br>
 </h1>
 
+> 警告：目前无法在 Wayland 模式运行的 Chromium 中输入中文。
 
 当前版本的 Chromium 已经支持使用原生 Wayland 后端运行。在 NixOS 上，有两种实现的方式。
 
