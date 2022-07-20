@@ -199,6 +199,9 @@ site_verify:
 # Friends 友链相关内容
 friends:
   list:
+  - name: 马保国
+    avatar: "https://avatars.githubusercontent.com/u/96376395"
+    link: "https://newluhux.github.io"
   - name: "小泠酱"
     avatar: "/images/rin.jpg" #欸？图呢
   - name: "Aleksana"
