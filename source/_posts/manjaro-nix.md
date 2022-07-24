@@ -360,7 +360,7 @@ experimental-features = nix-command flakes
         modules = [
           ./home.nix
        
-          # 安装 NixOS 软件，这里以 hyfetch 为例。
+          # 安装 NixOS CN 仓库里的软件，这里以 hyfetch 为例。
           ({ ... }: {
             home.packages = 
               [
