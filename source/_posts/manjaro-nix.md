@@ -58,8 +58,10 @@ Manjaro 默认的包管理器是 `pamac` 。此外，你也可以使用 `pacman`
 
 ## 安装输入法
 
-`pamac install fcitx5-im`
-`pamac install fcitxt-rime`
+```bash
+pamac install fcitx5-im
+pamac install fcitxt-rime
+```
 
 ## 设置输入法
 
@@ -77,19 +79,50 @@ GLFW_IM_MODULE=ibus
 
 要想从 AUR 构建软件，需要安装 `base-devel` 。
 
-`pamac install base-devel`
+```bash
+pamac install base-devel
+```
 
 ## 安装 AUR 的软件
 
 > 警告：AUR 不是受 Manjaro 社区支持的项目。在使用 AUR 的同时，请自担风险。
 
 使用 `pamac` 可管理 AUR 的软件。
-
-`pamac search -a typora` 
+ 
+```bash
+pamac search -a typora
+```
 
 上述命令可用于在 AUR 中搜索 "typora"。要安装 `typora`(AUR)，使用以下命令：
 
-`pamac build typora`
+```bash
+pamac build typora
+```
+
+## 指纹识别
+
+> 提示：建议使用 GNOME + GDM, 其提供了开箱即用的指纹识别方案。
+
+KDE Plasma 的指纹识别由 fprint 提供。
+
+安装 `fprintd` 和 `imagemagick` 包。
+
+```bash
+pamac install fprintd imagemagick
+```
+
+在 `/etc/pam.d/system-local-login` , `/etc/pam.d/sddm` 以及 `/etc/pam.d/kde` 的开始位置添加一行：
+
+```
+auth      sufficient pam_fprintd.so
+```
+
+要想添加指纹，执行
+
+```bash
+fprintd-enroll
+```
+
 
 ## 安装 Nix 包管理器
 
@@ -158,6 +191,7 @@ Home Manager 会生成如下的 `home.nix`
 
 ## 方案二（略不推荐）
 
+
 使用 `packageOverrides` 可以进行声明式的包管理。这意味着我们可以使用一个 Nix 表达 式来描述我们想要安装的软件。例如，安装 `git` 和 `emacs`，在 `~/.config/nixpkgs/config.nix` 中加入以下内容 ：
 
 ```nix
@@ -176,6 +210,44 @@ Home Manager 会生成如下的 `home.nix`
 
 要想将它们安装到你的环境里，执行 `nix-env -iA nixpkgs.myPackages`。如果你想要从一个 `nixpkgs` 的工作副本中加载软件包，执行 `nix-env -f. -iA myPackages` 。
 
-## NUR 与 Nix Flake 的使用
+## Nix Flake 的使用
 
-（未完待续）
+> 警告：该部分内容不适用于 NixOS, 仅适用于非 NixOS 的发行版。
+
+创建一个 `~/.config/nixpkgs/flake.nix` 文件
+
+```nix
+{
+  description = "随便写，不写也行";
+
+  inputs = {
+    # Specify the source of Home Manager and Nixpkgs.
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = { nixpkgs, home-manager, ... }:
+    let
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+    in {
+      homeConfigurations.<你的用户名> = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        # Specify your home configuration modules here, for example,
+        # the path to your home.nix.
+        modules = [
+          ./home.nix
+        ];
+
+        # Optionally use extraSpecialArgs
+        # to pass through arguments to home.nix
+      };
+    };
+}
+```
+
+> 提示：若使用 Home Manager 22.05, 将上述内容中 `home-manager` 的 `url` 改为 `github:nix-community/home-manager/release-22.05`
