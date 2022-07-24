@@ -199,6 +199,9 @@ site_verify:
 # Friends 友链相关内容
 friends:
   list:
+  - name: Sharelter
+    avatar: "https://avatars.githubusercontent.com/u/63940407"
+    link: "https://sharelter.github.io/"
   - name: 马保国
     avatar: "https://avatars.githubusercontent.com/u/96376395"
     link: "https://newluhux.github.io"
