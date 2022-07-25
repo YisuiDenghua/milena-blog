@@ -254,7 +254,15 @@ Home Manager 会生成如下的 `home.nix`
 
 要想将它们安装到你的环境里，执行 `nix-env -iA nixpkgs.myPackages`。如果你想要从一个 `nixpkgs` 的工作副本中加载软件包，执行 `nix-env -f. -iA myPackages` 。
 
-## Nix Flake 的使用
+## 使 Nix App 图标显示
+
+在非 NixOS 的发行版上，使用 Nix 安装的软件的图标默认不会以 `.desktop` 文件的形式在应用程序菜单中出现。要想使它们显示出来，在 `~/.profile` 里添加以下内容：
+
+```shell
+export XDG_DATA_DIRS=$HOME/.nix-profile/share:$HOME/.share:"${XDG_DATA_DIRS:-/usr/local/share/:/usr/share/}"
+```
+
+## 进阶内容：Nix Flake 的使用
 
 > 警告：该部分内容不适用于 NixOS, 仅适用于非 NixOS 的发行版。
 > 该部分内容默认你已经安装了 Home Manager
