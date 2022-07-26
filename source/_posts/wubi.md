@@ -11,10 +11,14 @@ tags:
   - 五笔
   - 保姆级教程
 ---
-<h1 align="center">
-  <img src="https://pic.lanta.cyou/img/nix-snowflake.svg" width="200">
-  <br>NixOS<br>
-</h1>
+<p align="center">
+  <a href="https://nixos.org#gh-light-mode-only">
+    <img src="https://raw.githubusercontent.com/NixOS/nixos-homepage/master/logo/nixos-hires.png" width="500px" alt="NixOS logo"/>
+  </a>
+  <a href="https://nixos.org#gh-dark-mode-only">
+    <img src="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nixos-white.png" width="500px" alt="NixOS logo"/>
+  </a>
+</p>
 
 五笔字型（简称：五笔）是一种快速而准确的的中文形码输入法，但是需要记住很多东西。
 
