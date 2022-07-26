@@ -14,11 +14,14 @@ tags:
   - NixOS
   - 保姆级教程
 ---
-<h1 align="center">
-  <img src="https://pic.lanta.cyou/img/nix-snowflake.svg" width="200">
-  <br>NixOS<br>
-</h1>
-
+<p align="center">
+  <a href="https://nixos.org#gh-light-mode-only">
+    <img src="https://raw.githubusercontent.com/NixOS/nixos-homepage/master/logo/nixos-hires.png" width="500px" alt="NixOS logo"/>
+  </a>
+  <a href="https://nixos.org#gh-dark-mode-only">
+    <img src="https://raw.githubusercontent.com/NixOS/nixos-artwork/master/logo/nixos-white.png" width="500px" alt="NixOS logo"/>
+  </a>
+</p>
 
 > 警告：本篇内容针对 Minecraft Java Edition 的原版（Vanilla）服务端, 不适用于 Minecraft Bedrock Edition 以及使用 Fabric Mod 的服务端。有关 Fabric 服务端，参见 [Yinfeng 的 Nix Flake](https://github.com/linyinfeng/mc-config) 。
 
