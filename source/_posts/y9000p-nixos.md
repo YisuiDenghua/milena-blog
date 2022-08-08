@@ -7,7 +7,7 @@ categories:
 author: 
  - 一穂灯花
  - NixOS Chinese Community
-date: 2022-05-06 09:15:59
+date: 2022-07-25 09:15:59
 tags: 
  - NixOS
  - Linux
