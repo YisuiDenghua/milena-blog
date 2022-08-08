@@ -8,7 +8,7 @@ categories:
 author: 
  - 一穂灯花
  - NixOS Chinese Community
-date: 2022-08-08 07:46:22
+date: 2022-08-08 02:42:54
 tags: 
  - NixOS
  - Linux
@@ -143,6 +143,8 @@ sudo nixos-rebuild switch
             ];
           })
 
+          # 启用 NUR
+          nur.nixosModules.nur
           
           ({ config, ... }: {
             # 使用 NUR 提供的包，这里以 hyfetch 为例
