@@ -259,8 +259,14 @@ friends:
     link: "https://91khr.github.io"
     avatar: "https://rp.ydz1.gq/https://avatars.githubusercontent.com/u/24869594?v=4"
   - name: "Lneylan"
-    bio: "https://rp.ydz1.gq/https://avatars.githubusercontent.com/u/92664048?v=4"
+    avatar: "https://rp.ydz1.gq/https://avatars.githubusercontent.com/u/92664048?v=4"
     link: "https://lneylan.com"
+  - name: "资源管理器"
+    avatar: "https://cos.zyglq.cn/static/web-logo.jpg"
+    link: "https://zyglq.cn"
+    bio: "是猫猫！"
+    
+    
   verify: false # 验证每个友链的可访问性，炸了会有提示
   
 
