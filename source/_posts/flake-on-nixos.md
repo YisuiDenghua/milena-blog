@@ -81,11 +81,11 @@ Flake 是 Nix 的一个实验性功能，它支持一系列 Nix 命令，以及�
 }
 ```
 
-配置完成后，使用 `nix flake` 命令更新 flake 以及更新 NixOS：
+配置完成后，使用 `nixos-rebuild` 更新 NixOS 以及使用 `nix flake` 命令更新 flake：
 
 ```bash
-sudo nix flake update
 sudo nixos-rebuild switch
+sudo nix flake update
 ```
 # 使用 NixOS-CN 及 NUR 第三方仓库
 
