@@ -265,6 +265,10 @@ friends:
     avatar: "https://cos.zyglq.cn/static/web-logo.jpg"
     link: "https://zyglq.cn"
     bio: "是猫猫！"
+  - name: "社会易姐QwQ"
+    avatar: "https://gravatar.loli.net/avatar/0bf16c751d119f1fb5e76d2bdef47fd4"
+    link: "https://shakaianee.top/"
+    bio: "给岁月以文明，而不是给文明以岁月。"
     
     
   verify: false # 验证每个友链的可访问性，炸了会有提示
