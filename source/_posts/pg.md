@@ -1,5 +1,3 @@
-
-
 ---
 title: 杂谈：让 NixOS 的 GNOME X11 会话实现 150% 缩放
 categories: 
