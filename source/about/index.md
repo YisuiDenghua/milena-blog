@@ -18,7 +18,7 @@ author:
 
 #### 俄文：Милена Исвия
 
-#### 日文：一穂ミレナ
+#### 日文：かずほとうか
 
 称呼：她/She/Она/
 
@@ -36,7 +36,9 @@ author:
 
 编辑器：Emacs，Vim
 
-浏览器：Firefox
+浏览器：Google Chrome
+
+桌面环境：Hyprland，GNOME
 
 输入法：RIME - 98 五笔
 
