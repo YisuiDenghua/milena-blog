@@ -34,6 +34,7 @@ menu:
     ruzh: https://ruzhtw.top/
     fedora: https://fedora.fun/
     mtf: https://mtf.saeziae.net
+    ftm: https://ftm.wiki
 
 label:
   index: <i class="fa fa-home"></i>首页
@@ -46,7 +47,8 @@ label:
     ruzh: 茶楼实验室
     fedora: "Fedora Fün"
     mtf: "MtF Wiki"
-    submenu: <i class="fa fa-link"></i>友站
+    ftm: "FtM Wiki"
+    submenu: <i class="fa fa-link"></i>实用网站
     author: 作者博客
     project: 项目链接
 
@@ -208,12 +210,14 @@ friends:
   - name: "小泠酱"
     avatar: "/images/rin.jpg" #欸？图呢
   - name: "Aleksana"
+    link: "https://aleksana.moe/"
     avatar: "https://portrait.gitee.com/uploads/avatars/user/2180/6541054_aleksana_1649149715.png!avatar200"
   - name: "Dram"
     link: "https://dram.page/"
     bio: "dramforever"
     avatar: "https://rp.ydz1.gq/https://avatars.githubusercontent.com/u/2818072"
   - name: "Hykilpikonna"
+    link: "https://aza.moe"
     avatar: "https://rp.ydz1.gq/https://avatars.githubusercontent.com/u/22280294"
   - name: "纱月酱"
     link: "https://sbchild.top"
@@ -269,7 +273,10 @@ friends:
     avatar: "https://gravatar.loli.net/avatar/0bf16c751d119f1fb5e76d2bdef47fd4"
     link: "https://shakaianee.top/"
     bio: "给岁月以文明，而不是给文明以岁月。"
-    
+  - name: "SukkaW"
+    bio: "苏卡卡的有底洞"
+    link: "https://blog.skk.moe"
+    avatar: "https://cdn.skk.moe/avatar/512x512.png"
     
   verify: false # 验证每个友链的可访问性，炸了会有提示
   
