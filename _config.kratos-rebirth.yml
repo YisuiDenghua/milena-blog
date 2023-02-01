@@ -31,9 +31,10 @@ menu:
     submenu: true
     ob: https://openbsd-zh-association.github.io/docs-openbsd-zh/
     nix: https://github.com/nixos-cn
+    aosc: https://aosc.io/
     ruzh: https://ruzhtw.top/
     fedora: https://fedora.fun/
-    mtf: https://mtf.saeziae.net
+    mtf: https://mtf.wiki
     ftm: https://ftm.wiki
 
 label:
@@ -44,6 +45,7 @@ label:
   sites:
     ob: OpenBSD-ZH
     nix: NixOS-CN
+    aosc: 安同开源社区
     ruzh: 茶楼实验室
     fedora: "Fedora Fün"
     mtf: "MtF Wiki"
