@@ -110,7 +110,20 @@ waydroid prop set persist.waydroid.multi_windows true
 sudo waydroid upgrade
 ```
 
-#### Waydroid 脚本
+### 截图
+
+![](/images/waydroid.png)
+图一：Waydroid 多窗口模式
+
+![](/images/full_ui.png)
+图二：Waydroid 的 Full UI 模式
+
+![](/images/hyfetch-1.png)
+图三：在 Weston 中运行的 Waydroid Full UI 模式，Weston 可运行在 X11 的桌面上。
+
+### ARM 转译
+
+### 其他 Waydroid 脚本（
 
 参见 https://github.com/casualsnek/waydroid_script/issues/69
 
