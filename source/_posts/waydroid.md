@@ -83,6 +83,9 @@ sudo waydroid init
 > 提示：如果你想要使用 GAPPS，则运行 `sudo waydroid init -s GAPPS -f` 命令。
 
 ### 使用
+
+>提示：如果你使用 X11 桌面，你需要先运行 `weston` 命令来打开一个 Weston 窗口，然后在 Weston 窗口中用鼠标单击左上角终端图标，之后在 Weston 终端中执行如下命令。
+
 使用以下命令
 ```
 # 在第一次安装之后，需要开启 Waydroid LXC 容器
