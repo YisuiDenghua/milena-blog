@@ -2,7 +2,8 @@
 title: 教程：Waydroid
 categories: 
   - NixOS
-  - 教程author: 
+  - 教程
+author: 
  - 一穂灯花
 date: 2023-3-13 02:28:00
 tags: 
