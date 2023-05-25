@@ -22,6 +22,10 @@ tags:
   </a>
 </p>
 
+> 提示：在最新版本的 NixOS 上，可以使用 `environment.sessionVariables.NIXOS_OZONE_WL = "1"` 设置来使基于 Chromium 的应用使用 Wayland 后端。如果想要使用输入法，你还要为 Chromium 添加 `--enable-wayland-ime` Flag。
+
+如果你在使用早些版本的  NixOS，可参考本文。
+
 > 警告：目前无法在 Wayland 模式运行的 Chromium 中输入中文。
 
 当前版本的 Chromium 已经支持使用原生 Wayland 后端运行。在 NixOS 上，有两种实现的方式。
