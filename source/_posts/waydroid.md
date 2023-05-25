@@ -37,7 +37,7 @@ sys.use_memfd=true
 Android 仅支持特定的 CPU 架构（ x86_64, x86, arm64-v8a armeabi-v7a）。可使用 `cat /proc/cpuinfo` 查看当前的 CPU 结构
 
 #### 1.3 GPU
-Waydroid 使用 Android 的 mesa 集成来实现穿透（passthrough），因此它在支持大多数移动端的 ARM/ARM64 SOC。 在 x86 的 PC 上，Waydroid 支持 Intel 与 ARM 的 GPU。如果你使用 NVIDIA GPU 或者是虚拟机，建议使用软件渲染。如果你不使用 NVIDIA 显卡，可跳过本文的 1.4 部分
+Waydroid 使用 Android 的 mesa 集成来实现穿透（passthrough），因此它在支持大多数移动端的 ARM/ARM64 SOC。 在 x86 的 PC 上，Waydroid 支持 Intel 与 AMD 的 GPU。如果你使用 NVIDIA GPU 或者是虚拟机，建议使用软件渲染。如果你不使用 NVIDIA 显卡或虚拟机，可跳过本文的 1.4 部分
 
 #### 1.4 软件渲染（可选）
 编辑 `/var/lib/waydroid/waydroid.cfg` 文件，并在其中加入如下内容
@@ -112,6 +112,34 @@ waydroid prop set persist.waydroid.multi_windows true
 # 更新系统
 sudo waydroid upgrade
 ```
+
+### 网络
+
+> 警告：笔者接触网络较晚，对网络及其实现原理不是很了解。以下内容可能有误。
+
+> 如有错误，还请到 GitHub 上提出 Issue 或者 PR
+
+Waydroid 的网络理应开箱即用。如果你的 Waydroid 没有网络，则需要在内核中开启数据包转发（Packet forwarding）功能，并允许以下规则通过防火墙。在 `configuration.nix` 中添加如下内容：
+
+```
+  # 开启数据包转发功能
+  boot.kernel.sysctl = {
+    "net.ipv4.ip_forward" = 1;
+    "net.ipv6.conf.default.forwarding" = 1;
+    "net.ipv6.conf.all.forwarding" = 1;
+  };
+  
+  # 防火墙规则
+  networking = {
+    firewall = {
+      enable = true; # 开启防火墙
+      allowedUDPPorts = [ 67 53 ]; # 开启相关端口 
+    };
+  };
+```
+
+
+
 
 ### 截图
 
